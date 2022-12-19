@@ -1,0 +1,36 @@
+{
+    "products": [
+        {
+            "name": "Cargo Pant",
+            "product_id": 1,
+            "price": 120,
+            "regular_price": 120,
+            "sale_price": 99
+        },
+        {
+            "name": "T Shirt",
+            "product_id": 1,
+            "price": 200,
+            "regular_price": 200,
+            "sale_price": 119
+        }
+    ],
+    "cart": {
+        "items": [
+            {
+              "id": 1,
+              "quantity": 1,
+              "meta": {}
+            },
+            {
+                "id": 2,
+                "quantity": 3,
+                "meta": {}
+            }
+        ],
+        "total_price": 720,
+        "discount": 123,
+        "shipping": 9,
+        "note": "ASAP"
+    }
+}
