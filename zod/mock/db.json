@@ -18,9 +18,9 @@
     "cart": {
         "items": [
             {
-              "id": 1,
-              "quantity": 1,
-              "meta": {}
+                "id": 1,
+                "quantity": 1,
+                "meta": {}
             },
             {
                 "id": 2,
@@ -31,6 +31,7 @@
         "total_price": 720,
         "discount": 123,
         "shipping": 9,
-        "note": "ASAP"
+        "note": "ASAP",
+        "create_time": "2020-01-01T00:00:00Z"
     }
 }
