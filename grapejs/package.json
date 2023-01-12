@@ -1,0 +1,16 @@
+{
+  "name": "grapejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "paultaku",
+  "license": "ISC",
+  "dependencies": {
+    "grapesjs": "^0.20.3",
+    "webpack": "^5.75.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
