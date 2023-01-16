@@ -4,13 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "webpack --mode development --watch",
+    "start": "webpack --mode development",
+    "deploy": "webpack --mode production",
+    "serve": "http-server ./"
   },
   "author": "paultaku",
   "license": "ISC",
   "dependencies": {
     "grapesjs": "^0.20.3",
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "style-loader": "^3.3.1",
     "webpack": "^5.75.0",
-    "webpack-dev-server": "^4.11.1"
+    "webpack-cli": "^5.0.1"
   }
 }
