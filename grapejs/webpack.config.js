@@ -4,17 +4,23 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: './src/main.js',
+  entry: './src/main.ts',
+  devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.[name].[hash].js'
   },
   resolve: {
     modules: ['node_modules', './src'],
-    extensions: ['','.js','.css']
+    extensions: ['', '.ts', '.js', '.css']
   },
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
       {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
@@ -48,5 +54,6 @@ module.exports = {
   devServer: {
     compress: true,
     port: 4200,
+    open: true,
   },
 };
